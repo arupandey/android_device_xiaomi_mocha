@@ -1,3 +1,6 @@
+export DEVICE=mocha
+export VENDOR=xiaomi
+
 OUTDIR=vendor/$VENDOR/$DEVICE
 MAKEFILE=../../../$OUTDIR/$DEVICE-vendor-blobs.mk
 
