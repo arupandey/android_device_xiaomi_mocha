@@ -40,6 +40,13 @@ PRODUCT_PACKAGES += \
     power.mocha.rc \
     ueventd.mocha.rc
 
+PRODUCT_COPY_FILES += \
+    device/xiaomi/mocha/rootdir/etc/init:root/init \
+    device/xiaomi/mocha/rootdir/etc/init.rc:root/init.rc \
+    device/xiaomi/mocha/rootdir/sbin/healthd:root/sbin/healthd \
+    device/xiaomi/mocha/rootdir/sbin/chargeonlymode:root/sbin/chargeonlymode \
+    device/xiaomi/mocha/rootdir/sbin/mdbd:root/sbin/mdbd
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.bluetooth_le.xml:system/etc/permissions/android.hardware.bluetooth_le.xml \
