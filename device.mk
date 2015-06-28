@@ -26,24 +26,6 @@ $(call inherit-product-if-exists, vendor/xiaomi/mocha/mocha-vendor.mk)
 DEVICE_PACKAGE_OVERLAYS += \
     device/nvidia/shieldtablet/overlay
 
-# Ramdisk
-PRODUCT_PACKAGES += \
-    fstab.tn8 \
-    init.cal.rc \
-    init.comms.rc \
-    init.icera.rc \
-    init.hdcp.rc \
-    init.ray_touch.rc \
-    init.t124.rc \
-    init.tegra.rc \
-    init.tlk.rc \
-    init.tn8.rc \
-    init.tn8.usb.rc \
-    init.tn8_common.rc \
-    init.tn8_emmc.rc \
-    init.ussrd.rc \
-    power.tn8.rc \
-    ueventd.tn8.rc
 
 # Permissions
 PRODUCT_COPY_FILES += \
