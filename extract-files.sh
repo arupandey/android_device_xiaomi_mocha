@@ -1,8 +1,8 @@
 #!/bin/bash
 
 #set -e
-export DEVICE=shieldtablet
-export VENDOR=nvidia
+export DEVICE=mocha
+export VENDOR=xiaomi
 
 if [ $# -eq 0 ]; then
   SRC=adb
@@ -23,7 +23,7 @@ fi
 BASE=../../../vendor/$VENDOR/$DEVICE/proprietary
 rm -rf $BASE/*
 
-for FILE in `egrep -v '(^#|^$)' proprietary-files.txt`; do
+for FILE in `egrep -v '(^#|^$)' ../$DEVICE/proprietary-files.txt`; do
   echo "Extracting /system/$FILE ..."
   OLDIFS=$IFS IFS=":" PARSING_ARRAY=($FILE) IFS=$OLDIFS
   FILE=`echo ${PARSING_ARRAY[0]} | sed -e "s/^-//g"`
