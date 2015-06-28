@@ -1,4 +1,4 @@
-#Copyright (c) 2013 NVIDIA Corporation.  All Rights Reserved.
+#Copyright (c) 2013-2014 NVIDIA Corporation.  All Rights Reserved.
 #
 #NVIDIA Corporation and its licensors retain all intellectual property and
 #proprietary rights in and to this software and related documentation.  Any
@@ -6,11 +6,13 @@
 #documentation without an express license agreement from NVIDIA Corporation
 #is strictly prohibited.
 
-on boot
+import init.t124.rc
 
-# TLK storage service
-service tlk_daemon /vendor/bin/tlk_daemon --storagedir /data
-    class main
-    user system
-    group keystore
+# create filesystems if necessary
+service setup_fs /system/bin/setup_fs \
+        /dev/block/platform/sdhci-tegra.3/by-name/UDA \
+        /dev/block/platform/sdhci-tegra.3/by-name/CAC
+    class core
+    user root
+    group root
     oneshot

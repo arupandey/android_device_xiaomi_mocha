@@ -26,6 +26,19 @@ $(call inherit-product-if-exists, vendor/xiaomi/mocha/mocha-vendor.mk)
 DEVICE_PACKAGE_OVERLAYS += \
     device/nvidia/shieldtablet/overlay
 
+PRODUCT_PACKAGES += \
+    init.none.rc \
+    fstab.mocha \
+    init.mocha.rc \
+    init.t124_emmc.rc \
+    init.t124_sata.rc \
+    init.cal.rc \
+    init.hdcp.rc \
+    init.t124.rc \
+    init.tlk.rc \
+    init.nv_dev_board.usb.rc \
+    power.mocha.rc \
+    ueventd.mocha.rc
 
 # Permissions
 PRODUCT_COPY_FILES += \
