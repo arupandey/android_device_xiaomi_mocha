@@ -1,1 +1,0 @@
-# Xiaomi Mi Pad "Mocha"
