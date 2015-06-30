@@ -13,6 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+HAVE_SELINUX=false
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG += normal hdpi xhdpi xxhdpi
