@@ -221,7 +221,7 @@
 -->
   <alsa_device name="voice"
                card_id="-1"
-               card_name="tegrart5639"
+               card_name="tegrart5671"
                device_id="2">
     <pcm_config rate="8000"
                 channels="1"
