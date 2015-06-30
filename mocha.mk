@@ -14,6 +14,7 @@
 # limitations under the License.
 #
 
+
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG += normal hdpi xhdpi xxhdpi
 TARGET_SCREEN_HEIGHT := 2048
