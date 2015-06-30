@@ -124,7 +124,7 @@ device/xiaomi/mocha/rootdir/sbin/e2fsck_static:recovery/root/sbin/e2fsck_static
     BOARD_HARDWARE_CLASS := device/xiaomi/mocha/cmhw/
      
    # SELinux
-BOARD_SEPOLICY_DIRS += device/nvidia/shieldtablet/sepolicy
+BOARD_SEPOLICY_DIRS += device/xiaomi/mocha/sepolicy
 BOARD_SEPOLICY_UNION += \
 te_macros \
 agpsd.te \
