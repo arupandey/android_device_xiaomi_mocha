@@ -52,9 +52,6 @@
     USE_CAMERA_STUB := true
      
     # Kernel
-#TARGET_KERNEL_SOURCE := kernel/nvidia/shieldtablet
-#TARGET_KERNEL_CONFIG := cyanogenmod_shieldtablet_defconfig
-#BOARD_KERNEL_CMDLINE := "androidboot.selinux=permissive"
 BOARD_KERNEL_CMDLINE := "androidboot.selinux=permissive"
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_PAGESIZE := 2048
